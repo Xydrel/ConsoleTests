@@ -7,7 +7,7 @@
 //
 //};
 
-void TestBinarySearchTree()
+void RunBinarySearchTreeTests()
 {
 	BinaryNode<int>* root = nullptr;
 }

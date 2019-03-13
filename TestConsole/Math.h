@@ -58,7 +58,7 @@ FORCEINLINE T Cube(T x, T y)
 
 
 #if TEST_FACILITY_ENABLED && TEST_MATH_FUNCTIONS_ENABLED
-void TestMathFunctions(void)
+void RunMathTestFunctions(void)
 {
 	int x = 5, y = 5;
 	printf("Multiplying %d with %d = %d\n", x, y, Multiply(x, y));

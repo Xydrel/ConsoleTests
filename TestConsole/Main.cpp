@@ -8,15 +8,15 @@
 int main(void)
 {
 #if TEST_FACILITY_ENABLED
-
+	// nothing needed here currently
 #endif
 
 #if MATH_TESTS_ENABLED
-	TestMathFunctions();
+	RunMathTestFunctions();
 #endif
 
 #if TEST_DATA_STRUCTS_FACITLITY_ENABLED
-	TestBinarySearchTree();
+	RunBinarySearchTreeTests();
 #endif
 
 #if GENERAL_TESTS_ENABLED

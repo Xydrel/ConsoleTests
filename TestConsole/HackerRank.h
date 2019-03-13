@@ -30,20 +30,35 @@ int minimumSwaps(std::vector<int>& arr)
 {
 	int minimumSwapsMade = 0;
 	std::cout << "traversing the arr" << std::endl;
-	for (int i = arr.back() - 1; i >= 0; i--)
-	{
-		// complete sorting operation
-		std::cout << i << " ";
-		if (arr[i] != (i + 1))
-		{
-			std::cout << "i+1 = " << i+1 << " arr[i] = " << arr[i] << std::endl;
-			//for (int j = 0; j < arr.back() - 1; j++)
-			//{
 
-			//}
+		for (int i = 0; i < arr.size(); i++)
+		{
+			// complete sorting operation
+			if (arr[i] != (i + 1))
+			{
+				for (int j = 0; j < arr.size(); j++)
+				{
+					if (arr[j] == (i + 1))
+					{
+						int numBuff = arr[i];
+						arr[i] = arr[j];
+						arr[j] = numBuff;
+						minimumSwapsMade++;
+						break;
+					}
+				}
+			}
+
+			// debugging code
+			std::cout << std::endl;
+			for (auto i : arr)
+			{
+				std::cout << i << " ";
+			}
 		}
-	}
+	
 	std::cout << std::endl;
+	std::cout << "minimimSwapsMade = " << minimumSwapsMade << std::endl;
 	return minimumSwapsMade;
 }
 
@@ -61,7 +76,8 @@ void RunHackerRankTestFunctions()
 	std::cout << "Running HackerRank Test functions" << std::endl;
 
 
-	std::vector<int> arr = { 1,3,5,2,4,6,7 };
+	std::vector<int> arr = { 1,3,5,2,4,6,7 }; // should resut in 3
+	//std::vector<int> arr = { 4,3,1,2 }; // should result in 3
 	minimumSwaps(arr);
 }
 #endif

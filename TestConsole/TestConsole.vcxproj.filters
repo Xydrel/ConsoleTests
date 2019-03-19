@@ -44,5 +44,8 @@
     <ClInclude Include="HackerRank.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ScratchPad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

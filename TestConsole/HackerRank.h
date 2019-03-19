@@ -31,12 +31,12 @@ int minimumSwaps(std::vector<int>& arr)
 	int minimumSwapsMade = 0;
 	std::cout << "traversing the arr" << std::endl;
 
-		for (int i = 0; i < arr.size(); i++)
+		for (size_t i = 0; i < arr.size(); i++)
 		{
 			// complete sorting operation
 			if (arr[i] != (i + 1))
 			{
-				for (int j = 0; j < arr.size(); j++)
+				for (size_t j = 0; j < arr.size(); j++)
 				{
 					if (arr[j] == (i + 1))
 					{

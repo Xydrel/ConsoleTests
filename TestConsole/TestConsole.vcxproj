@@ -113,11 +113,16 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="BinarySearchTree.h" />
     <ClInclude Include="Config\cfg-Core.h" />
     <ClInclude Include="Config\cfg-Facilities.h" />
     <ClInclude Include="Core.h" />
-    <ClInclude Include="BinaryNode.h" />
+    <ClInclude Include="BinaryTreeNode.h" />
+    <ClInclude Include="DirectoryHandle.h" />
+    <ClInclude Include="FileCore.h" />
+    <ClInclude Include="FileInfo.h" />
+    <ClInclude Include="FilePaths.h" />
     <ClInclude Include="HackerRank.h" />
     <ClInclude Include="Math.h" />
     <ClInclude Include="ScratchPad.h" />

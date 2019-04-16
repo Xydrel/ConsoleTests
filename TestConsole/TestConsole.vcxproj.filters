@@ -16,6 +16,9 @@
     <Filter Include="Header Files\Config">
       <UniqueIdentifier>{de0d2fec-1759-4f6d-a2d8-d7e07172538c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\DirectoryManagement">
+      <UniqueIdentifier>{fcb12af1-4ca7-46cd-a130-0d81b1673fc1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -35,9 +38,6 @@
     <ClInclude Include="Math.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BinaryNode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="BinarySearchTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -45,6 +45,24 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ScratchPad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileInfo.h">
+      <Filter>Header Files\DirectoryManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="FilePaths.h">
+      <Filter>Header Files\DirectoryManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectoryHandle.h">
+      <Filter>Header Files\DirectoryManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="FileCore.h">
+      <Filter>Header Files\DirectoryManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="BinarySearch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryTreeNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

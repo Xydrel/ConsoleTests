@@ -7,6 +7,7 @@
 #include <vector>
 #include <string>
 #include <iterator>
+#include <unordered_set>
 
 #include <algorithm>
 
@@ -115,4 +116,35 @@ std::vector<int> mergeVectors(const std::vector<int>& myVector, const std::vecto
 	}
 
 	return mergedVectors;
+}
+
+bool canTwoMoviesFillFlight(const std::vector<int>& movieLengths, int flightLength)
+{
+	using namespace std;
+	// determine if two movies add up to the flight length
+	if (movieLengths.empty())
+	{
+		return false;
+	}
+
+	if (movieLengths.size() > 1)
+	{
+		unordered_set<int> unorderedMovieLengths;
+		unorderedMovieLengths.insert(movieLengths.begin(), movieLengths.end());
+		unordered_set<int>::const_iterator movieLenIter = unorderedMovieLengths.begin();
+		while (movieLenIter != unorderedMovieLengths.end())
+		{
+			int composite = flightLength - *movieLenIter;
+			if (unorderedMovieLengths.find(composite) != unorderedMovieLengths.end()
+				&& unorderedMovieLengths.find(composite) != unorderedMovieLengths.begin())
+			{
+				return true;
+			}
+
+			++movieLenIter;
+		}
+	}
+
+
+	return false;
 }

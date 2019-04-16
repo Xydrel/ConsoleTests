@@ -1,6 +1,7 @@
 #include "Core.h"
 #include "Math.h"
-#include "BinaryNode.h"
+#include "BinaryTreeNode.h"
+#include "BinarySearchTree.h"
 #include "HackerRank.h"
 #include "ScratchPad.h"
 
@@ -8,6 +9,7 @@
 
 int main(void)
 {
+
 #if TEST_FACILITY_ENABLED
 	// nothing needed here currently
 #endif
@@ -17,6 +19,7 @@ int main(void)
 #endif
 
 #if TEST_DATA_STRUCTS_FACITLITY_ENABLED
+
 	RunBinarySearchTreeTests();
 #endif
 
@@ -35,10 +38,21 @@ int main(void)
 	/*const std::vector<int> myVector{ 2, 4, 6, 8 };
 	const std::vector<int> alicesVector{ 1, 7 };
 */
-	const std::vector<int> myVector{ 2, 4, 6 };
+	/*const std::vector<int> myVector{ 2, 4, 6 };
 	const std::vector<int> alicesVector{ 1, 3, 7 };
 	mergeVectors(myVector, alicesVector);
+*/
 
+	//const std::vector<int> movieLengths{ 4, 3, 2 };
+	//const std::vector<int> movieLengths{ 6 };
+	//const std::vector<int> movieLengths{ 3, 8 };
+	//bool result = canTwoMoviesFillFlight(movieLengths, 6);
+	//std::string resultString = (result == 1) ? "true" : "false";
+	//std::cout << "result: " << resultString << std::endl;
+
+	//EXPECT(canTwoMoviesFillFlight(movieLengths, 6) == false);
+
+	
 #endif
 
 
